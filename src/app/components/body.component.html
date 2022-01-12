@@ -5,12 +5,14 @@
         <hr>
 
         <button type="button" class="btn btn-outline-primary btn-block" (click)=" mostrar = !mostrar ">
+          <!-- button is a button built by Bootstrap with lots of options to configure-->
       Mostrar/Ocultar
     </button>
 
         <br>
 
         <div *ngIf="mostrar" class="card card-inverse card-primary mb-3 text-center">
+            <!-- card is a container built by Bootstrap with multiple variants and options -->
             <div class="card-block">
                 <blockquote class="card-blockquote">
                     <p>{{ frase.mensaje }}</p>
@@ -27,6 +29,7 @@
         <hr>
 
         <ul class="list-group">
+            <!-- list-group is a component for displaying a series of content-->
 
             <li *ngFor="let persona of personajes; let i = index" class="list-group-item">
                 {{ i + 1 }}. {{ persona }}
