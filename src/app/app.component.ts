@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+  selector: "app-root", // Name of the component to be injected in the html
+  templateUrl: "./app.component.html", // Path to find the template
 })
 export class AppComponent {
-
-  nombre:string = "Fernando";
-  apellido:string = "Herrera";
-  
+  nombre: string = "Fernando";
+  apellido: string = "Herrera";
 }
